@@ -44,38 +44,22 @@
             type: "raster-dem",
             url: "pmtiles://tiles/juneau_rgb.pmtiles",
             tileSize: 256,
-          },
-          /*
-          hillshadeSource: {
-            type: "raster-dem",
-            url: "pmtiles://tiles/grand-canyon-dsm.pmtiles",
-            tileSize: 256,
-          },
-          */
+          }
         },
         layers: [
           {
             id: "topo",
             type: "raster",
             source: "topo",
-          },
-          /*
-          {
-            id: "hills",
-            type: "hillshade",
-            source: "hillshadeSource",
-            layout: { visibility: "visible" },
-            paint: { "hillshade-shadow-color": "#473B24" },
-          },
-          */
+          }
         ],
         terrain: {
           source: "terrainSource",
           exaggeration: 2,
         },
       },
-      center: [-134.416,58.3],
-      zoom: 9.0,
+      center: [-135.0,58.4],
+      zoom: 8.5,
       pitch: 40,
       bearing: 0,
       maxPitch: 85,
