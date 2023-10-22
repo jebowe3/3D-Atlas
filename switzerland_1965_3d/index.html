@@ -35,8 +35,7 @@
         sources: {
           topo: {
             type: "raster",
-            //url: "pmtiles://tiles/switzerland_topo.pmtiles",
-            tiles: ["tiles/switzerland_topo/{z}/{x}/{y}.png"],
+            url: "pmtiles://tiles/switzerland_topo.pmtiles",
             tileSize: 256
           },
           terrainSource: {
@@ -57,7 +56,7 @@
             id: "simple-tiles",
             type: "raster",
             source: "topo",
-            minzoom: 0,
+            minzoom: 6,
             maxzoom: 12
           },
           /*
@@ -76,12 +75,12 @@
         },
       },
       center: [8.25, 46.5],
-      zoom: 8.1,
+      zoom: 7,
       pitch: 40,
       bearing: 0,
       maxPitch: 85,
-      minZoom: 8.1,
-      maxZoom: 11.9
+      minZoom: 6,
+      maxZoom: 12
     });
 
 
